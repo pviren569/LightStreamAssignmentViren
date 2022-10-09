@@ -21,6 +21,13 @@
 		2B0E13C128F26B6500F6AFDF /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E13C028F26B6500F6AFDF /* Extension+UIView.swift */; };
 		2B0E13C628F2704E00F6AFDF /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E13C528F2704E00F6AFDF /* HomeCollectionViewCell.swift */; };
 		2B0E13C928F27A7800F6AFDF /* HomeViewOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E13C828F27A7800F6AFDF /* HomeViewOption.swift */; };
+		2B0E13CB28F28B9200F6AFDF /* CharacterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E13CA28F28B9200F6AFDF /* CharacterTableViewController.swift */; };
+		2B0E13CE28F28C0B00F6AFDF /* CharacterTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E13CD28F28C0B00F6AFDF /* CharacterTableViewModel.swift */; };
+		2B0E13D028F2903400F6AFDF /* CharactersInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E13CF28F2903400F6AFDF /* CharactersInfo.swift */; };
+		2B0E13D228F297A900F6AFDF /* CharacterInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E13D128F297A900F6AFDF /* CharacterInfoTableViewCell.swift */; };
+		2B0E13D628F3552400F6AFDF /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E13D528F3552400F6AFDF /* CharacterDetailViewController.swift */; };
+		2B0E13D828F3576200F6AFDF /* CharacterDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E13D728F3576200F6AFDF /* CharacterDetailViewModel.swift */; };
+		2B0E13DA28F35F9100F6AFDF /* Extension+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E13D928F35F9100F6AFDF /* Extension+UIImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +66,13 @@
 		2B0E13C028F26B6500F6AFDF /* Extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
 		2B0E13C528F2704E00F6AFDF /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		2B0E13C828F27A7800F6AFDF /* HomeViewOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewOption.swift; sourceTree = "<group>"; };
+		2B0E13CA28F28B9200F6AFDF /* CharacterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewController.swift; sourceTree = "<group>"; };
+		2B0E13CD28F28C0B00F6AFDF /* CharacterTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewModel.swift; sourceTree = "<group>"; };
+		2B0E13CF28F2903400F6AFDF /* CharactersInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersInfo.swift; sourceTree = "<group>"; };
+		2B0E13D128F297A900F6AFDF /* CharacterInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterInfoTableViewCell.swift; sourceTree = "<group>"; };
+		2B0E13D528F3552400F6AFDF /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
+		2B0E13D728F3576200F6AFDF /* CharacterDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewModel.swift; sourceTree = "<group>"; };
+		2B0E13D928F35F9100F6AFDF /* Extension+UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIImageView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				2B0E13C028F26B6500F6AFDF /* Extension+UIView.swift */,
+				2B0E13D928F35F9100F6AFDF /* Extension+UIImageView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -167,6 +182,7 @@
 		2B0E13C228F26DB600F6AFDF /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				2B0E13CC28F28BCD00F6AFDF /* ViewModel */,
 				2B0E13C728F2705300F6AFDF /* Cells */,
 				2B0E13C428F26DD300F6AFDF /* Model */,
 				2B0E13C328F26DC800F6AFDF /* ViewControllers */,
@@ -178,6 +194,8 @@
 			isa = PBXGroup;
 			children = (
 				2B0E138D28F2507000F6AFDF /* ViewController.swift */,
+				2B0E13CA28F28B9200F6AFDF /* CharacterTableViewController.swift */,
+				2B0E13D528F3552400F6AFDF /* CharacterDetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -186,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				2B0E13C828F27A7800F6AFDF /* HomeViewOption.swift */,
+				2B0E13CF28F2903400F6AFDF /* CharactersInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -194,8 +213,18 @@
 			isa = PBXGroup;
 			children = (
 				2B0E13C528F2704E00F6AFDF /* HomeCollectionViewCell.swift */,
+				2B0E13D128F297A900F6AFDF /* CharacterInfoTableViewCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		2B0E13CC28F28BCD00F6AFDF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2B0E13CD28F28C0B00F6AFDF /* CharacterTableViewModel.swift */,
+				2B0E13D728F3576200F6AFDF /* CharacterDetailViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,11 +359,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B0E13C628F2704E00F6AFDF /* HomeCollectionViewCell.swift in Sources */,
+				2B0E13D028F2903400F6AFDF /* CharactersInfo.swift in Sources */,
+				2B0E13CB28F28B9200F6AFDF /* CharacterTableViewController.swift in Sources */,
 				2B0E138E28F2507000F6AFDF /* ViewController.swift in Sources */,
+				2B0E13CE28F28C0B00F6AFDF /* CharacterTableViewModel.swift in Sources */,
 				2B0E138A28F2507000F6AFDF /* AppDelegate.swift in Sources */,
+				2B0E13D228F297A900F6AFDF /* CharacterInfoTableViewCell.swift in Sources */,
 				2B0E13BC28F252B100F6AFDF /* LSRequest.swift in Sources */,
 				2B0E13C928F27A7800F6AFDF /* HomeViewOption.swift in Sources */,
+				2B0E13DA28F35F9100F6AFDF /* Extension+UIImageView.swift in Sources */,
 				2B0E138C28F2507000F6AFDF /* SceneDelegate.swift in Sources */,
+				2B0E13D628F3552400F6AFDF /* CharacterDetailViewController.swift in Sources */,
+				2B0E13D828F3576200F6AFDF /* CharacterDetailViewModel.swift in Sources */,
 				2B0E13C128F26B6500F6AFDF /* Extension+UIView.swift in Sources */,
 				2B0E13BE28F2661D00F6AFDF /* API.swift in Sources */,
 			);

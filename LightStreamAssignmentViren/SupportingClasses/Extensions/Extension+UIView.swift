@@ -8,6 +8,10 @@
 import Foundation
 import UIKit
 
+protocol ReusableView: AnyObject {
+    static var identifier: String { get }
+}
+
 extension UIView {
     func anchor(top: NSLayoutYAxisAnchor? = nil,
                 left: NSLayoutXAxisAnchor? = nil,

@@ -8,10 +8,6 @@
 import Foundation
 import UIKit
 
-protocol ReusableView: AnyObject {
-    static var identifier: String { get }
-}
-
 final class HomeCollectionViewCell: UICollectionViewCell {
     private let optionImageView: UIImageView = {
         let imageView = UIImageView(frame: .zero)

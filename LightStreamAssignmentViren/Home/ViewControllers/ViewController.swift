@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         let label = UILabel()
         label.text = "Welcome to Rick and Morty characters and locations Guide, Select a one of the option below to start your journey in Rick and Morty world."
         label.numberOfLines = 0
-        label.font = .systemFont(ofSize: 20)
+        label.font = .systemFont(ofSize: 17)
         label.textAlignment = .left
         return label
     }()
@@ -33,6 +33,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Rick & Morty Guide"
         setupViews()
         populateHomeViewOptions()
         collectionView.reloadData()
@@ -83,6 +84,13 @@ extension ViewController: UICollectionViewDataSource {
         return cell
     }
     
+}
+
+extension ViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vc = CharacterTableViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
 extension ViewController: UICollectionViewDelegateFlowLayout {
