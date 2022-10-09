@@ -16,6 +16,7 @@
 		2B0E13A128F2507100F6AFDF /* LightStreamAssignmentVirenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E13A028F2507100F6AFDF /* LightStreamAssignmentVirenTests.swift */; };
 		2B0E13AB28F2507100F6AFDF /* LightStreamAssignmentVirenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E13AA28F2507100F6AFDF /* LightStreamAssignmentVirenUITests.swift */; };
 		2B0E13AD28F2507100F6AFDF /* LightStreamAssignmentVirenUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E13AC28F2507100F6AFDF /* LightStreamAssignmentVirenUITestsLaunchTests.swift */; };
+		2B0E13BC28F252B100F6AFDF /* LSRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E13BB28F252B100F6AFDF /* LSRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		2B0E13A628F2507100F6AFDF /* LightStreamAssignmentVirenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LightStreamAssignmentVirenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B0E13AA28F2507100F6AFDF /* LightStreamAssignmentVirenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightStreamAssignmentVirenUITests.swift; sourceTree = "<group>"; };
 		2B0E13AC28F2507100F6AFDF /* LightStreamAssignmentVirenUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightStreamAssignmentVirenUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2B0E13BB28F252B100F6AFDF /* LSRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		2B0E138828F2507000F6AFDF /* LightStreamAssignmentViren */ = {
 			isa = PBXGroup;
 			children = (
+				2B0E13B928F2528100F6AFDF /* SupportingClasses */,
 				2B0E138928F2507000F6AFDF /* AppDelegate.swift */,
 				2B0E138B28F2507000F6AFDF /* SceneDelegate.swift */,
 				2B0E138D28F2507000F6AFDF /* ViewController.swift */,
@@ -125,6 +128,22 @@
 				2B0E13AC28F2507100F6AFDF /* LightStreamAssignmentVirenUITestsLaunchTests.swift */,
 			);
 			path = LightStreamAssignmentVirenUITests;
+			sourceTree = "<group>";
+		};
+		2B0E13B928F2528100F6AFDF /* SupportingClasses */ = {
+			isa = PBXGroup;
+			children = (
+				2B0E13BA28F2529500F6AFDF /* Network */,
+			);
+			path = SupportingClasses;
+			sourceTree = "<group>";
+		};
+		2B0E13BA28F2529500F6AFDF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2B0E13BB28F252B100F6AFDF /* LSRequest.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +279,7 @@
 			files = (
 				2B0E138E28F2507000F6AFDF /* ViewController.swift in Sources */,
 				2B0E138A28F2507000F6AFDF /* AppDelegate.swift in Sources */,
+				2B0E13BC28F252B100F6AFDF /* LSRequest.swift in Sources */,
 				2B0E138C28F2507000F6AFDF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
