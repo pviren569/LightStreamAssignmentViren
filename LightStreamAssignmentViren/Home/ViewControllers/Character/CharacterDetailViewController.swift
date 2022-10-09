@@ -76,6 +76,7 @@ class CharacterDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = vm.namelabelText()
         setupViews()
         populateData()
     }

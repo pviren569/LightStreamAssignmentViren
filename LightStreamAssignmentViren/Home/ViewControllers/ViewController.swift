@@ -88,8 +88,13 @@ extension ViewController: UICollectionViewDataSource {
 
 extension ViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let vc = CharacterTableViewController()
-        self.navigationController?.pushViewController(vc, animated: true)
+        if indexPath.row == 0 {
+            let vc = CharacterTableViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        } else {
+            let vc = LocationTableViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
 }
 

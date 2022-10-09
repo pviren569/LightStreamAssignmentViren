@@ -20,7 +20,7 @@ struct Character: Codable {
     let id: Int
     let name: String
     let status: Status
-    let species: Species
+    let species: String
     let origin: Location
     let location: Location
     let gender: Gender
@@ -28,25 +28,24 @@ struct Character: Codable {
     let url: String
 }
 
-enum Gender: String, Codable {
-    case female = "Female"
-    case male = "Male"
-    case unknown = "unknown"
+extension Character {
+    enum Gender: String, Codable {
+        case female = "Female"
+        case male = "Male"
+        case unknown = "unknown"
+    }
+
+    // MARK: - Location
+    struct Location: Codable {
+        let name: String
+        let url: String
+    }
+
+    enum Status: String, Codable {
+        case alive = "Alive"
+        case dead = "Dead"
+        case unknown = "unknown"
+    }
 }
 
-// MARK: - Location
-struct Location: Codable {
-    let name: String
-    let url: String
-}
 
-enum Species: String, Codable {
-    case alien = "Alien"
-    case human = "Human"
-}
-
-enum Status: String, Codable {
-    case alive = "Alive"
-    case dead = "Dead"
-    case unknown = "unknown"
-}

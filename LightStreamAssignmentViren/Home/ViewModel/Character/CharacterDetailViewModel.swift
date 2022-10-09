@@ -10,8 +10,12 @@ import Foundation
 class CharacterDetailViewModel{
     private let model: Character
     
-    init(model: Character) {
+    init(_ model: Character) {
         self.model = model
+    }
+    
+    func title() -> String {
+        return model.name
     }
     
     func characterImageUrlString() -> String {
@@ -37,6 +41,4 @@ class CharacterDetailViewModel{
     func genderLabelText() -> String {
         return "Gender:: \(model.gender.rawValue)"
     }
-    
-    
 }

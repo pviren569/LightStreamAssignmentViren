@@ -18,11 +18,12 @@ class CharacterTableViewController: UITableViewController {
     }
     
     func fetchData() {
-        vm.fetchCharacters { error in
+        vm.fetchCharacters { [weak self ] error in
             if let error = error {
+                self?.presentAlert(title: "Error", message: error.localizedDescription)
                 print("CharacterTableViewController.fetchData.Error:: \(error)")
             } else {
-                self.tableView.reloadData()
+                self?.tableView.reloadData()
             }
         }
     }
@@ -43,7 +44,7 @@ class CharacterTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vm = CharacterDetailViewModel(model: vm.character(at: indexPath))
+        let vm = CharacterDetailViewModel(vm.character(at: indexPath))
         let vc = CharacterDetailViewController(vm: vm)
         self.navigationController?.pushViewController(vc, animated: true)
     }

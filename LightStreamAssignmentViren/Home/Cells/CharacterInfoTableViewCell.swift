@@ -55,9 +55,9 @@ class CharacterInfoTableViewCell: UITableViewCell {
         characterImage.anchor(top: topAnchor,
                               left: leftAnchor,
                               bottom: bottomAnchor,
-                              paddingTop: 5,
-                              paddingLeft: 5,
-                              paddingBottom: 5,
+                              paddingTop: 8,
+                              paddingLeft: 8,
+                              paddingBottom: 8,
                               width: 90
         )
         stackView.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
