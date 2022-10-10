@@ -11,7 +11,7 @@ import UIKit
 final class HomeCollectionViewCell: UICollectionViewCell {
     private let optionImageView: UIImageView = {
         let imageView = UIImageView(frame: .zero)
-        imageView.contentMode = .scaleAspectFill
+        imageView.contentMode = .scaleAspectFit
         return imageView
     }()
     
