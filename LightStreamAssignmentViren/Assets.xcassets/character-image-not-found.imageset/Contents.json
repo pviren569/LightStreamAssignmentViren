@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "character-image-not-found.jpeg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
