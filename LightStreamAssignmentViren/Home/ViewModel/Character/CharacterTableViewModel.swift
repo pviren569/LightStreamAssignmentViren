@@ -7,10 +7,13 @@
 
 import Foundation
 
-typealias CharactersResponse = (Error?) -> Void
-
 class CharacterTableViewModel {
+    typealias CharactersResponse = (Error?) -> Void
     var characters: [Character] = []
+    
+    init(_ characters: [Character] = []) {
+        self.characters = characters
+    }
     
     func fetchCharacters(completion: @escaping CharactersResponse) {
         let request = RequestConfig(apiEndpoint: API.RickAndMorty.character())

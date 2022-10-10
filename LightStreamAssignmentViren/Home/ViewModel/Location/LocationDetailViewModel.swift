@@ -7,11 +7,13 @@
 
 import Foundation
 
-typealias CharactersForLocationResponse = () -> Void
+
 
 class LocationDetailViewModel {
+    typealias CharactersForLocationResponse = () -> Void
+    
     private let model: Location
-    var residents: [Character] = []
+    private(set) var residents: [Character] = []
     
     init(_ model: Location) {
         self.model = model

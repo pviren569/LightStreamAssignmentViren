@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     
     var titleLabel: UILabel = {
         let label = UILabel()
-        label.text = "Welcome to Rick and Morty characters and locations Guide, Select a one of the option below to start your journey in Rick and Morty world."
+        label.text = "Welcome to Rick & Morty characters and locations Guide, Select a one of the option below to start your journey in Rick and Morty world."
         label.numberOfLines = 0
         label.font = .systemFont(ofSize: 17)
         label.textAlignment = .left
@@ -65,8 +65,8 @@ class ViewController: UIViewController {
     
     private func populateHomeViewOptions() {
         homeViewOptions = [
-            HomeViewOption(name: "Characters", imageName: "character-icon"),
-            HomeViewOption(name: "Locations", imageName: "location-icon")]
+            HomeViewOption(name: "Characters", imageName: "character-icon", option: .characters),
+            HomeViewOption(name: "Locations", imageName: "location-icon", option: .locations)]
     }
 }
 
@@ -88,10 +88,11 @@ extension ViewController: UICollectionViewDataSource {
 
 extension ViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if indexPath.row == 0 {
+        switch homeViewOptions[indexPath.row].option {
+        case .characters:
             let vc = CharacterTableViewController()
             self.navigationController?.pushViewController(vc, animated: true)
-        } else {
+        case .locations:
             let vc = LocationTableViewController()
             self.navigationController?.pushViewController(vc, animated: true)
         }

@@ -13,7 +13,7 @@
 		2B0E139128F2507000F6AFDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B0E138F28F2507000F6AFDF /* Main.storyboard */; };
 		2B0E139328F2507100F6AFDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B0E139228F2507100F6AFDF /* Assets.xcassets */; };
 		2B0E139628F2507100F6AFDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B0E139428F2507100F6AFDF /* LaunchScreen.storyboard */; };
-		2B0E13A128F2507100F6AFDF /* LightStreamAssignmentVirenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E13A028F2507100F6AFDF /* LightStreamAssignmentVirenTests.swift */; };
+		2B0E13A128F2507100F6AFDF /* HomeViewModelsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E13A028F2507100F6AFDF /* HomeViewModelsTests.swift */; };
 		2B0E13AB28F2507100F6AFDF /* LightStreamAssignmentVirenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E13AA28F2507100F6AFDF /* LightStreamAssignmentVirenUITests.swift */; };
 		2B0E13AD28F2507100F6AFDF /* LightStreamAssignmentVirenUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E13AC28F2507100F6AFDF /* LightStreamAssignmentVirenUITestsLaunchTests.swift */; };
 		2B0E13BC28F252B100F6AFDF /* LSRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E13BB28F252B100F6AFDF /* LSRequest.swift */; };
@@ -29,12 +29,15 @@
 		2B0E13D828F3576200F6AFDF /* CharacterDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E13D728F3576200F6AFDF /* CharacterDetailViewModel.swift */; };
 		2B0E13DA28F35F9100F6AFDF /* Extension+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E13D928F35F9100F6AFDF /* Extension+UIImageView.swift */; };
 		2B0E13DC28F3612E00F6AFDF /* LocationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E13DB28F3612E00F6AFDF /* LocationTableViewController.swift */; };
-		2B0E13DE28F3619100F6AFDF /* LocationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E13DD28F3619100F6AFDF /* LocationInfo.swift */; };
+		2B0E13DE28F3619100F6AFDF /* LocationsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E13DD28F3619100F6AFDF /* LocationsInfo.swift */; };
 		2B0E13E028F3624000F6AFDF /* LocationTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E13DF28F3624000F6AFDF /* LocationTableViewModel.swift */; };
 		2B0E13E228F363CF00F6AFDF /* LocationInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E13E128F363CF00F6AFDF /* LocationInfoTableViewCell.swift */; };
 		2B0E13E428F3679900F6AFDF /* LocationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E13E328F3679900F6AFDF /* LocationDetailViewController.swift */; };
 		2B0E13E628F36C0400F6AFDF /* LocationDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E13E528F36C0400F6AFDF /* LocationDetailViewModel.swift */; };
 		2B0E13EC28F37C2F00F6AFDF /* Extension+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E13EB28F37C2F00F6AFDF /* Extension+UIViewController.swift */; };
+		2B0E13F028F37F8500F6AFDF /* CharacterInfo.json in Resources */ = {isa = PBXBuildFile; fileRef = 2B0E13EE28F37F8500F6AFDF /* CharacterInfo.json */; };
+		2B0E13F128F37F8500F6AFDF /* LocationsInfo.json in Resources */ = {isa = PBXBuildFile; fileRef = 2B0E13EF28F37F8500F6AFDF /* LocationsInfo.json */; };
+		2B0E13F428F3803900F6AFDF /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E13F328F3803900F6AFDF /* Utility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +67,7 @@
 		2B0E139528F2507100F6AFDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B0E139728F2507100F6AFDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B0E139C28F2507100F6AFDF /* LightStreamAssignmentVirenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LightStreamAssignmentVirenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2B0E13A028F2507100F6AFDF /* LightStreamAssignmentVirenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightStreamAssignmentVirenTests.swift; sourceTree = "<group>"; };
+		2B0E13A028F2507100F6AFDF /* HomeViewModelsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelsTests.swift; sourceTree = "<group>"; };
 		2B0E13A628F2507100F6AFDF /* LightStreamAssignmentVirenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LightStreamAssignmentVirenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B0E13AA28F2507100F6AFDF /* LightStreamAssignmentVirenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightStreamAssignmentVirenUITests.swift; sourceTree = "<group>"; };
 		2B0E13AC28F2507100F6AFDF /* LightStreamAssignmentVirenUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightStreamAssignmentVirenUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -81,12 +84,15 @@
 		2B0E13D728F3576200F6AFDF /* CharacterDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewModel.swift; sourceTree = "<group>"; };
 		2B0E13D928F35F9100F6AFDF /* Extension+UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIImageView.swift"; sourceTree = "<group>"; };
 		2B0E13DB28F3612E00F6AFDF /* LocationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTableViewController.swift; sourceTree = "<group>"; };
-		2B0E13DD28F3619100F6AFDF /* LocationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInfo.swift; sourceTree = "<group>"; };
+		2B0E13DD28F3619100F6AFDF /* LocationsInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsInfo.swift; sourceTree = "<group>"; };
 		2B0E13DF28F3624000F6AFDF /* LocationTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTableViewModel.swift; sourceTree = "<group>"; };
 		2B0E13E128F363CF00F6AFDF /* LocationInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInfoTableViewCell.swift; sourceTree = "<group>"; };
 		2B0E13E328F3679900F6AFDF /* LocationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailViewController.swift; sourceTree = "<group>"; };
 		2B0E13E528F36C0400F6AFDF /* LocationDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailViewModel.swift; sourceTree = "<group>"; };
 		2B0E13EB28F37C2F00F6AFDF /* Extension+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIViewController.swift"; sourceTree = "<group>"; };
+		2B0E13EE28F37F8500F6AFDF /* CharacterInfo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CharacterInfo.json; sourceTree = "<group>"; };
+		2B0E13EF28F37F8500F6AFDF /* LocationsInfo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LocationsInfo.json; sourceTree = "<group>"; };
+		2B0E13F328F3803900F6AFDF /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,7 +158,9 @@
 		2B0E139F28F2507100F6AFDF /* LightStreamAssignmentVirenTests */ = {
 			isa = PBXGroup;
 			children = (
-				2B0E13A028F2507100F6AFDF /* LightStreamAssignmentVirenTests.swift */,
+				2B0E13F228F3801900F6AFDF /* HelperClass */,
+				2B0E13ED28F37ED600F6AFDF /* Stubs */,
+				2B0E13A028F2507100F6AFDF /* HomeViewModelsTests.swift */,
 			);
 			path = LightStreamAssignmentVirenTests;
 			sourceTree = "<group>";
@@ -220,7 +228,7 @@
 			children = (
 				2B0E13C828F27A7800F6AFDF /* HomeViewOption.swift */,
 				2B0E13CF28F2903400F6AFDF /* CharactersInfo.swift */,
-				2B0E13DD28F3619100F6AFDF /* LocationInfo.swift */,
+				2B0E13DD28F3619100F6AFDF /* LocationsInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -278,6 +286,23 @@
 				2B0E13E528F36C0400F6AFDF /* LocationDetailViewModel.swift */,
 			);
 			path = Location;
+			sourceTree = "<group>";
+		};
+		2B0E13ED28F37ED600F6AFDF /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				2B0E13EE28F37F8500F6AFDF /* CharacterInfo.json */,
+				2B0E13EF28F37F8500F6AFDF /* LocationsInfo.json */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		2B0E13F228F3801900F6AFDF /* HelperClass */ = {
+			isa = PBXGroup;
+			children = (
+				2B0E13F328F3803900F6AFDF /* Utility.swift */,
+			);
+			path = HelperClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -394,6 +419,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B0E13F128F37F8500F6AFDF /* LocationsInfo.json in Resources */,
+				2B0E13F028F37F8500F6AFDF /* CharacterInfo.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,7 +439,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B0E13C628F2704E00F6AFDF /* HomeCollectionViewCell.swift in Sources */,
-				2B0E13DE28F3619100F6AFDF /* LocationInfo.swift in Sources */,
+				2B0E13DE28F3619100F6AFDF /* LocationsInfo.swift in Sources */,
 				2B0E13E028F3624000F6AFDF /* LocationTableViewModel.swift in Sources */,
 				2B0E13D028F2903400F6AFDF /* CharactersInfo.swift in Sources */,
 				2B0E13E428F3679900F6AFDF /* LocationDetailViewController.swift in Sources */,
@@ -440,7 +467,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B0E13A128F2507100F6AFDF /* LightStreamAssignmentVirenTests.swift in Sources */,
+				2B0E13F428F3803900F6AFDF /* Utility.swift in Sources */,
+				2B0E13A128F2507100F6AFDF /* HomeViewModelsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

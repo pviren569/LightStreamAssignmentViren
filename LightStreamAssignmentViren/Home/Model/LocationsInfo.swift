@@ -1,5 +1,5 @@
 //
-//  LocationInfo.swift
+//  LocationsInfo.swift
 //  LightStreamAssignmentViren
 //
 //  Created by Patel, Viren on 10/9/22.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct LocationInfo: Codable {
+struct LocationsInfo: Codable {
     let Locations: [Location]
     
     enum CodingKeys: String, CodingKey  {

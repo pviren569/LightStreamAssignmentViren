@@ -8,7 +8,6 @@
 import UIKit
 
 class CharacterInfoTableViewCell: UITableViewCell {
-    
     private let nameLabel: UILabel = {
         let label = UILabel()
         label.textColor = .black
@@ -16,7 +15,6 @@ class CharacterInfoTableViewCell: UITableViewCell {
         label.textAlignment = .left
         return label
     }()
-    
     
     private let statusLabel: UILabel = {
         let label = UILabel()
@@ -51,6 +49,8 @@ class CharacterInfoTableViewCell: UITableViewCell {
         stackView.addArrangedSubview(nameLabel)
         stackView.addArrangedSubview(statusLabel)
         contentView.addSubview(stackView)
+        
+        characterImage.layer.cornerRadius = 15
         
         characterImage.anchor(top: topAnchor,
                               left: leftAnchor,

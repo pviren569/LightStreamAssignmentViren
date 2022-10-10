@@ -10,4 +10,13 @@ import Foundation
 struct HomeViewOption {
     let name: String
     let imageName: String
+    let option: Option
 }
+
+extension HomeViewOption {
+    enum Option{
+        case characters
+        case locations
+    }
+}
+

@@ -7,10 +7,13 @@
 
 import Foundation
 
-typealias LocationsResponse = (Error?) -> Void
-
 class LocationTableViewModel{
+    typealias LocationsResponse = (Error?) -> Void
     var locations: [Location] = []
+    
+    init(_ locations: [Location] = []) {
+        self.locations = locations
+    }
     
     func fetchLocations(completion: @escaping LocationsResponse) {
         let config = RequestConfig(apiEndpoint: API.RickAndMorty.locations())
@@ -26,7 +29,7 @@ class LocationTableViewModel{
             }
             
             do {
-                let locationInfo = try JSONDecoder().decode(LocationInfo.self, from: data)
+                let locationInfo = try JSONDecoder().decode(LocationsInfo.self, from: data)
                 let locations = locationInfo.Locations.sorted(by: {$0.name.lowercased() < $1.name.lowercased()})
                 self.locations = locations
                 completion( nil)

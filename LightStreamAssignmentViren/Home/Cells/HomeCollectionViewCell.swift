@@ -31,7 +31,9 @@ final class HomeCollectionViewCell: UICollectionViewCell {
     private func setupViews() {
         contentView.clipsToBounds = true
         contentView.layer.cornerRadius = Constants.contentViewCornerRadius
-        contentView.backgroundColor = .white
+        contentView.backgroundColor = .yellow.withAlphaComponent(0.4)
+        
+        contentView.layer.cornerRadius = 15
         
         contentView.addSubview(optionImageView)
         contentView.addSubview(titleLabel)
